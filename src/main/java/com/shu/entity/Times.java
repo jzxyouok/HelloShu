@@ -78,7 +78,7 @@ public class Times implements Serializable {
         this.second = second;
     }
 
-    public String pastTime() {
+    public String pastTime() {//输出据当前多久时间
         String s = "";
         Times now=getCurrentTime();
         if (now.getYear() - year > 0) {
