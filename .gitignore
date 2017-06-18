@@ -1,0 +1,12 @@
+target
+.idea/workspace.xml
+.idea/dataSources
+.idea/sqldialects.xml
+.idea/dataSources.local.xml
+.idea/dataSources.xml
+.idea/kotlinc.xml
+.idea/misc.xml
+.idea/uiDesigner.xml
+.idea/libraries
+src/main/resources/jdbc.properties
+src/test
