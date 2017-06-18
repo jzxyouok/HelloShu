@@ -12,5 +12,6 @@
 </head>
 <body>
 <p>这是第一个页面</p>
+<a href="tttt">test</a>
 </body>
 </html>
