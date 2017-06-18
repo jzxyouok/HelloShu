@@ -5,6 +5,9 @@
 
 
     jdbc.driverClassName=com.mysql.jdbc.Driver
+    
     jdbc.url=jdbc:mysql://ip:3306/dbHelloShu?useUnicode=true&amp&characterEncoding=utf-8
+    
     jdbc.username=userName
+    
     jdbc.password=password
