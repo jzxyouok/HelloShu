@@ -43,7 +43,7 @@
                 <prop key="hibernate.cache.use_second_level_cache">false</prop>
                 <prop key="hibernate.cache.use_query_cache">false</prop>
                 <prop key="current_session_context_class">thread</prop>
-                <prop key="hibernate.hbm2ddl.auto">create</prop>  <!--自动创建数据表 -->
+                <prop key="hibernate.hbm2ddl.auto">update</prop>  <!--自动创建数据表 -->
                 <prop key="hibernate.current_session_context_class">
                     org.springframework.orm.hibernate5.SpringSessionContext
                 </prop>
