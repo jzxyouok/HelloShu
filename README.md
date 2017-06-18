@@ -1,6 +1,6 @@
 # HelloShu
 
-### jdbc.properties 配置文件
+### jdbc.properties 内容如下
 * 放在　resources 目录下
 
 
@@ -11,3 +11,9 @@
     jdbc.username=userName
     
     jdbc.password=password
+
+
+
+### 一些命令提示
+* 每次工作前　　　git pull
+* 每次提交前　　　git status
