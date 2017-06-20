@@ -9,6 +9,14 @@
 
 ![image1](https://github.com/yahaa/HelloShu/raw/master/img/HelloShu.jpeg)
 
+
+
+### ER图
+* 图2
+
+
+![image1](https://github.com/yahaa/HelloShu/raw/master/img/ER.jpeg)
+
 #### 需求
 1. 系统界面友好，给人看了心情不至于想杀人．
 2. 用户可提问题，提出问题后在问题列表中显示．
