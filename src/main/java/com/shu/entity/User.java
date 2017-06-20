@@ -12,11 +12,14 @@ public class User {
     private String uId;//用户Id
     private String uName;//用户名
     private String uPwd;//用户密码
+    private String email;
+    private String phone;
+    private String sex;
     private Set<Remark> remarks = new LinkedHashSet<Remark>();//已发表评论
     private Set<Question> questions=new LinkedHashSet<Question>();//已提问题
 
     @Id
-    @Column(length=8)
+    @Column(length=64)
     public String getuId() {
         return uId;
     }
@@ -39,6 +42,30 @@ public class User {
 
     public void setuPwd(String uPwd) {
         this.uPwd = uPwd;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public String getSex() {
+        return sex;
+    }
+
+    public void setSex(String sex) {
+        this.sex = sex;
     }
 
     @OneToMany(mappedBy = "user",cascade = CascadeType.ALL)
