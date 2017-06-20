@@ -4,6 +4,8 @@ package com.shu.tools;
 import org.json.JSONObject;
 
 import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.io.UnsupportedEncodingException;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
@@ -50,9 +52,18 @@ public class SecurityTools {
     }
 
     public static Cookie cookieFactory(String userName) {
-
         Cookie cookie = new Cookie(SYS, userName);
         cookie.setMaxAge(60 * 60 * 24);
         return cookie;
+    }
+
+    public static String doResponse(String uId, Status status, HttpServletResponse response) {
+        if (status.getInt("success") > 0) {
+            Cookie cookie = cookieFactory(uId);
+            response.addCookie(cookie);
+            return status.toString();
+        } else {
+            return null;
+        }
     }
 }

@@ -18,7 +18,6 @@ public class DataService {
     private UserDao userDao;
 
     public Status addUser(String uId, String pwd, String email) {
-        int res = 1;
         if (uId.length() <= 0 || pwd.length() <= 0 || email.length() <= 0) return FAILD;
         if (userDao.userExist(uId)) return FAILD;
         User user = new User();
@@ -29,6 +28,14 @@ public class DataService {
         if (userDao.addUser(user)) return SUCCESS;
         else return FAILD;
 
+    }
+
+    public Status checkUser(String uId, String password) {
+        password = md5(password);
+        User user = userDao.getUser(uId);
+        if (user == null) return FAILD;
+        if (user.getuPwd().equals(password)) return SUCCESS;
+        return FAILD;
     }
 
 }

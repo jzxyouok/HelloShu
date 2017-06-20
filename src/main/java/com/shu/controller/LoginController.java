@@ -12,6 +12,7 @@ import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletResponse;
 
 import static com.shu.tools.SecurityTools.cookieFactory;
+import static com.shu.tools.SecurityTools.doResponse;
 
 /**
  * Created by 李长虹 on 2017/6/18.
@@ -22,17 +23,11 @@ public class LoginController {
     @Autowired
     private DataService dataService;
 
-    @RequestMapping(value = "", method = RequestMethod.GET, produces = "text/html;charset=utf-8")
+    @RequestMapping(value = "", method = RequestMethod.POST, produces = "text/html;charset=utf-8")
     @ResponseBody
-    public String login(String userName, String password, String email, HttpServletResponse response) {
-        Status status = dataService.addUser(userName, password, email);
-        if (status.getInt("success") > 0) {
-            Cookie cookie = cookieFactory(userName);
-            response.addCookie(cookie);
-            return status.toString();
-        } else {
-            return null;
-        }
+    public String login(String uId, String password, HttpServletResponse response) {
+        Status status = dataService.checkUser(uId, password);
+        return doResponse(uId, status, response);
     }
 
 }
