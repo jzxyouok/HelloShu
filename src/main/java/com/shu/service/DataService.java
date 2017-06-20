@@ -38,4 +38,11 @@ public class DataService {
         return FAILD;
     }
 
+    public Status userExists(String uId) {
+        User user = userDao.getUser(uId);
+        if (user == null) return NO_EXISTS;
+        return EXISTS;
+
+    }
+
 }

@@ -1,5 +1,9 @@
 # HelloShu
 
+### 项目用例图
+* 图1
+![image1](https://github.com/yahaa/HelloShu/raw/master/img/HelloShu.jpeg)
+
 ### jdbc.properties 内容如下
 * 放在　resources 目录下
 
