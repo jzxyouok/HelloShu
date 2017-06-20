@@ -1,0 +1,25 @@
+#navbar{
+	border-left:0px;
+	border-right:0px;
+}
+#logo{
+	padding-left:100px;
+}
+.nav_active{
+	border-bottom: solid 2px #F0AD4E;
+}
+#navbar div{
+	float:left;
+}
+.login{
+	float:right;
+	margin-left:30px;
+	padding-top:8px;
+}
+.login button{
+	outline: none;
+}
+.login a{
+	text-decoration:none;
+	color:#9F7777;
+} 
