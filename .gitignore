@@ -8,7 +8,6 @@ target
 .idea/misc.xml
 .idea/uiDesigner.xml
 .idea/libraries
-.idea/modules.xml
 src/main/resources/jdbc.properties
 src/test
 1.0.iml
