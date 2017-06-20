@@ -6,8 +6,8 @@
 
 ![image1](https://github.com/yahaa/HelloShu/raw/master/img/HelloShu.jpeg)
 
-### jdbc.properties 内容如下
-* 放在　resources 目录下
+#### 项目运行提示
+* 在　resources 目录下 添加　jdbc.properties 内容如下
 
 
     jdbc.driverClassName=com.mysql.jdbc.Driver
@@ -20,7 +20,7 @@
 
 
 
-### 一些命令提示
+#### 一些命令提示
 * 每次工作前　　　git pull
 * 每次提交前　　　git status
 
