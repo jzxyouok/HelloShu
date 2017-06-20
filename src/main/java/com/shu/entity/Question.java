@@ -1,8 +1,6 @@
 package com.shu.entity;
 
 import javax.persistence.*;
-import java.sql.Time;
-import java.util.Date;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
@@ -16,12 +14,13 @@ public class Question {
     private User user;//所提问者
     private int numberOfAnswer;//回答人数
     private int numberOfViews;//查看人数
-    private Date askedTime;//提出时间
+    private Times askedTime;//提出时间
     private Set<Remark> remarks = new LinkedHashSet<Remark>();//所有评论
     private Set<Type> types = new LinkedHashSet<Type>();//所属类型
 
     @Id
     @Column(length = 8)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     public String getqId() {
         return qId;
     }
@@ -82,11 +81,11 @@ public class Question {
         this.numberOfViews = numberOfViews;
     }
 
-    public Date getAskedTime() {
+    public Times getAskedTime() {
         return askedTime;
     }
 
-    public void setAskedTime(Date askedTime) {
+    public void setAskedTime(Times askedTime) {
         this.askedTime = askedTime;
     }
 }

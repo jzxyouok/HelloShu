@@ -1,10 +1,6 @@
 package com.shu.entity;
 
-import org.springframework.beans.factory.annotation.Autowired;
-
 import javax.persistence.Embeddable;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
 import java.io.Serializable;
 import java.util.Date;
 
@@ -13,20 +9,24 @@ import java.util.Date;
  */
 @Embeddable
 public class Times implements Serializable {
-    private String tId;
     private int year;
     private int month;
-    private int hour;
     private int day;
+    private int hour;
     private int minute;
     private int second;
 
-    public String gettId() {
-        return tId;
+    public Times() {
+
     }
 
-    public void settId(String tId) {
-        this.tId = tId;
+    public Times(Date now) {
+        year = now.getYear();
+        month = now.getMonth();
+        day = now.getDay();
+        hour = now.getHours();
+        minute = now.getMinutes();
+        second = now.getSeconds();
     }
 
     public int getYear() {
@@ -47,7 +47,6 @@ public class Times implements Serializable {
 
     public int getDay() {
         return day;
-
     }
 
     public void setDay(int day) {
@@ -78,32 +77,21 @@ public class Times implements Serializable {
         this.second = second;
     }
 
-    public String pastTime() {//输出据当前多久时间
-        String s = "";
-        Times now=getCurrentTime();
+    @Override
+    public String toString() {//直接利用toString函数表示出该问题或评论提出时间距当前时间多久
+        String s = "";        //精确到最大
+        Date now = new Date();
         if (now.getYear() - year > 0) {
             s += now.getYear() - year + " 年";
         } else if (now.getMonth() - month > 0) {
             s += now.getYear() - month + " 月";
         } else if (now.getDay() - day > 0) {
             s += now.getDay() - day + " 天";
-        } else if (now.getHour() - hour > 0) {
-            s += now.getHour() - hour + " 小时";
-        } else if (now.getMinute() - minute > 0) {
-            s += now.getMinute() - minute + " 分钟";
-        } else s += now.getSecond() - second + " 秒钟";
+        } else if (now.getHours() - hour > 0) {
+            s += now.getHours() - hour + " 小时";
+        } else if (now.getMinutes() - minute > 0) {
+            s += now.getMinutes() - minute + " 分钟";
+        } else s += now.getSeconds() - second + " 秒钟";
         return s;
-    }
-
-    private Times getCurrentTime() {
-        Times now = new Times();
-        Date date =new Date();
-        year=date.getYear();
-        month=date.getMonth();
-        day=date.getDay();
-        hour=date.getHours();
-        minute=date.getMinutes();
-        second=date.getSeconds();
-        return now;
     }
 }
