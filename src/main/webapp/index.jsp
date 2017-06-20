@@ -11,10 +11,12 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>HelloShu</title>
-    <link rel="stylesheet" type="text/css" href="/statics/css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="/statics/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="/statics/css/index.css"/>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <%--<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>--%>
+    <%--<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>--%>
+    <script type="text/javascript" src="/statics/js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="/statics/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="/statics/js/index.js"></script>
 
 </head>
@@ -49,11 +51,11 @@
     </div>
     <div class="login visible-lg pull-right">
         <button class="btn btn-warning" type="button" style="margin-right:20px"><a data-toggle="modal" data-target="#registerWin">注册</a></button>
-        <button class="btn btn-warning" type="button"><a href="##">登录</a></button>
+        <button class="btn btn-warning" type="button"><a data-toggle="modal" data-target="#loginWin">登录</a></button>
     </div>
 </div>
 
-<%--弹出框--%>
+<%--注册弹出框--%>
 <div class="modal" id="registerWin" tabindex="-1" role="dialog" aria-labelledby="new_email">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -96,5 +98,39 @@
         </div>
     </div>
 </div>
+
+<%--登录弹出框--%>
+<div class="modal" id="loginWin" tabindex="-1" role="dialog" aria-labelledby="new_email">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="login0">用户登录</h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="userName0">userName</label>
+                        <input type="text" class="form-control" id="userName0"
+                               placeholder="用户名/邮箱(必填)">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password0">password</label>
+                        <input type="password" class="form-control" id="password0" placeholder="密码">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary"
+                        data-dismiss="modal" id="be_sure0" disabled="disabled">确定</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">取消</button>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
+
