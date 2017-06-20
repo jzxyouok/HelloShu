@@ -11,7 +11,6 @@ import javax.annotation.Resource;
 public class Dao {
     @Resource
     private SessionFactory sessionFactory;
-
     public Session getSession(){
         return sessionFactory.getCurrentSession();
     }
