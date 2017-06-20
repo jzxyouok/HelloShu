@@ -41,19 +41,16 @@
             <li><a href="##">关于我们</a></li>
         </ul>
     </div>
-    <div class="input-group col-md-3" id="search" style="margin-left:30px;padding-top:8px">
+    <div class="input-group col-md-3 col-sm-3 col-xs-3" id="search" style="margin-left:30px;padding-top:8px">
         <input type="text" class="form-control" / >
         <span class="input-group-btn">
 		            <button class="btn btn-info btn-search">查找</button>
 		        </span>
     </div>
-    <div class="login">
+    <div class="login visible-lg">
         <button class="btn btn-warning" type="button"style="margin-right:20px"><a href="##">注册</a></button>
         <button class="btn btn-warning" type="button"><a href="##">登录</a></button>
     </div>
-</div>
-<div >
-    <!--<img src="img/1.jpg" alt="" />-->
 </div>
 </body>
 </html>
