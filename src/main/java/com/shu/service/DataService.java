@@ -42,7 +42,11 @@ public class DataService {
         User user = userDao.getUser(uId);
         if (user == null) return NO_EXISTS;
         return EXISTS;
+    }
 
+    public Status checkEmail(String email) {
+        if (userDao.checkEmail(email)) return EXISTS;
+        return NO_EXISTS;
     }
 
 }
