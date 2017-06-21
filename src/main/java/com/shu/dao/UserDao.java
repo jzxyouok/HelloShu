@@ -28,4 +28,12 @@ public class UserDao extends Dao {
         return this.getSession().get(User.class, uId);
     }
 
+    public boolean checkEmail(String email) {
+        int t = this.getSession().createQuery("from User where email=?")
+                .setParameter(0, email)
+                .executeUpdate();
+        if (t > 0) return true;
+        return false;
+    }
+
 }
