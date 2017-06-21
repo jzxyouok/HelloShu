@@ -65,36 +65,56 @@
                 </button>
                 <h4 class="modal-title" id="register">注册用户</h4>
             </div>
-            <div class="modal-body">
-                <form>
-                    <div class="form-group">
-                        <label for="userName">userName</label>
+            <div class="modal-body "  id="pop1">
+                <form class="col-md-offset-2" id="iform">
+                    <div class="form-group ">
+                        <label for="userName">用 户 名&nbsp：</label>
                         <input type="text" class="form-control" id="userName"
-                               placeholder="用户名(必填)">
+                               placeholder="用户名至少4个字符">
                     </div>
                     <div class="form-group">
-                        <label for="userEmail">email</label>
+                        <label for="userEmail">邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;箱&nbsp：</label>
                         <input type="email" class="form-control" id="userEmail"
-                               placeholder="邮箱(必填)">
+                               placeholder="请输入已验证的邮箱地址">
                     </div>
 
                     <div class="form-group">
-                        <label for="password1">password</label>
-                        <input type="password" class="form-control" id="password1" placeholder="密码">
+                        <label for="password1">密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码&nbsp：</label>
+                        <input type="password" class="form-control" id="password1" placeholder="请输入密码，6-16位字母/数字组合">
                     </div>
 
-                    <div class="form-group">
-                        <label for="password2">password</label>
-                        <input type="password" class="form-control" id="password2" placeholder="输入相同的密码">
+                    <div class="form-group ">
+                        <label for="password2">确认密码：</label>
+                        <input type="password" class="form-control" id="password2" placeholder="请输入与上面相同的密码">
+                    </div>
+
+                    <div class="pull-right">
+                        <lable style="font-family: 微软雅黑">第三方登录：&nbsp;&nbsp;</lable>
+                        <span><a href="##"><img src="/statics/img/Weibo1.jpg" alt=""></a></span>
+                        <span><a href="##"><img src="/statics/img/Weixin1.jpg" alt=""></a></span>
+                        <span><a href="##"><img src="/statics/img/qq1.jpg" alt=""></a></span>
+                    </div>
+                    <div class="clear"></div>
+                    <div>
+                        <button type="button" class="btn btn-warning form-group col-md-9 "
+                            data-dismiss="modal" id="be_sure" disabled="disabled">立 即 注 册</button>
                     </div>
                 </form>
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-primary"
-                        data-dismiss="modal" id="be_sure" disabled="disabled">确定
-                </button>
-                <button type="button" class="btn btn-danger" data-dismiss="modal">取消</button>
-            </div>
+            <div class="moadal-footer"><br/><br/><br/></div>
+            <%--<div class="modal-footer">--%>
+           <%--<div>--%>
+               <%--<div class="pull-right">--%>
+                    <%--<lable>第三方登录&nbsp;&nbsp;&nbsp;&nbsp;</lable>--%>
+                    <%--<span><a href="##"><img src="/statics/img/Weibo1.jpg" alt=""></a></span>--%>
+                    <%--<span><a href="##"><img src="/statics/img/Weixin1.jpg" alt=""></a></span>--%>
+                    <%--<span><a href="##"><img src="/statics/img/qq1.jpg" alt=""></a></span>--%>
+                <%--</div>--%>
+
+                <%--&lt;%&ndash;<button type="button" class="btn btn-primary"&ndash;%&gt;--%>
+                        <%--&lt;%&ndash;data-dismiss="modal" id="be_sure" disabled="disabled">注 册</button>&ndash;%&gt;--%>
+                <%--&lt;%&ndash;<button type="button" class="btn " data-dismiss="modal">取 消</button>&ndash;%&gt;--%>
+            <%--</div>--%>
         </div>
     </div>
 </div>

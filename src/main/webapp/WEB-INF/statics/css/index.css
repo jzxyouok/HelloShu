@@ -21,4 +21,16 @@
 .login a{
 	text-decoration:none;
 	color:#9F7777;
-} 
+}
+
+#iform input{
+	width:350px;
+}
+
+#pop1{
+	/*background: url(/statics/img/bj2.jpg/);*/
+
+}
+.clear{
+	clear:both;
+}
