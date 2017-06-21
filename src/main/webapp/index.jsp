@@ -22,9 +22,9 @@
 </head>
 <body>
 <div class="navbar navbar-default" role="navigation" id="navbar">
-    <div class="navbar-header">
+    <div class="navbar-header" id="icon_bar">
         <!-- .navbar-toggle样式用于toggle收缩的内容，即nav-collapse collapse样式所在元素 -->
-        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-responsive-collapse" >
             <span class="sr-only">答疑</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -40,10 +40,9 @@
             <li><a href="##">系列教程</a></li>
             <li><a href="##">名师介绍</a></li>
             <li><a href="##">成功案例</a></li>
-            <li><a href="##">关于我们</a></li>
         </ul>
     </div>
-    <div class="input-group col-md-3 col-sm-3 col-xs-3" id="search" style="margin-left:30px;padding-top:8px">
+    <div class="input-group col-md-3 col-sm-5 col-xs-5" id="search" style="margin-left:30px;padding-top:8px">
         <input type="text" class="form-control">
         <span class="input-group-btn">
 		            <button class="btn btn-info btn-search">查找</button>
@@ -151,6 +150,7 @@
         </div>
     </div>
 </div>
+
 </body>
 </html>
 

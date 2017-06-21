@@ -5,6 +5,9 @@
 #logo{
 	padding-left:100px;
 }
+@media screen and (max-width:768px){
+	#logo { padding-left:30px; }
+}
 .nav_active{
 	border-bottom: solid 2px #F0AD4E;
 }
