@@ -18,7 +18,7 @@
     <script type="text/javascript" src="/statics/js/jquery-3.1.1.min.js"></script>
     <script type="text/javascript" src="/statics/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="/statics/js/index.js"></script>
-    <link rel="stylesheet" href="/statics/css/style.css" />
+    <link rel="stylesheet" href="/statics/css/style.css"/>
     <script type="text/javascript" src="/statics/js/lrtk.js"></script>
 
 </head>
