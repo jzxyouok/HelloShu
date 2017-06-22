@@ -177,8 +177,8 @@
                     </div>
 
                     <div>
-                        <button type="button" class="btn btn-warning form-group col-md-12"
-                                data-dismiss="modal" id="be_sure" disabled="disabled">登录
+                        <button type="button" class="btn btn-warning form-group "
+                                data-dismiss="modal" id="be_sure" disabled="disabled" style="width:250px">登录
                         </button>
                     </div>
                 </form>
