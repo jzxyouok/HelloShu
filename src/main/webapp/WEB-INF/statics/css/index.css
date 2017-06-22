@@ -5,9 +5,7 @@
 #logo{
 	padding-left:100px;
 }
-@media screen and (max-width:768px){
-	#logo { padding-left:30px; }
-}
+
 .nav_active{
 	border-bottom: solid 2px #F0AD4E;
 }
@@ -41,3 +39,29 @@
 #lform input{
 	width:250px;
 }
+
+@media screen and (max-width:992px){
+	body{ overflow-x: scroll; }
+	#logo { padding-left:30px; }
+	.login { padding-right:30px;}
+
+}
+@font-face {
+	font-family: 'Glyphicons Halflings';
+	src: url('/statics/fonts/glyphicons-halflings-regular.eot');
+	src: url('statics/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),
+		url('/statics/fonts/glyphicons-halflings-regular.woff') format('woff'),
+			url('/statics/fonts/glyphicons-halflings-regular.ttf') format('truetype'),
+				url('/statics/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+
+.glyphicon {
+	position: relative;
+	top: 1px;
+	display: inline-block;
+	font-family: 'Glyphicons Halflings';
+	-webkit-font-smoothing: antialiased;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+	-moz-osx-font-smoothing: grayscale;
