@@ -37,3 +37,7 @@
 .clear{
 	clear:both;
 }
+
+#lform input{
+	width:250px;
+}

@@ -14,9 +14,9 @@ $(document).ready(function (){
 		event.stopPropagation();
 	});
 	$(document).click(function(){
-		$("#search").removeClass("col-md-7").addClass("col-md-3");
-		$("ul").show();
-	});
+        $("#search").removeClass("col-md-7").addClass("col-md-3");
+        $("ul").show();
+    });
 
 	// $("#icon_bar").click(function(){
 	// 	$("#search").hide();

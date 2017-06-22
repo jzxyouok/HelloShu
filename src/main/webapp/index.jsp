@@ -147,28 +147,15 @@
                     </div>
                 </form>
             </div>
-            <div class="moadal-footer"><br/><br/><br/></div>
-            <%--<div class="modal-footer">--%>
-            <%--<div>--%>
-            <%--<div class="pull-right">--%>
-            <%--<lable>第三方登录&nbsp;&nbsp;&nbsp;&nbsp;</lable>--%>
-            <%--<span><a href="##"><img src="/statics/img/Weibo1.jpg" alt=""></a></span>--%>
-            <%--<span><a href="##"><img src="/statics/img/Weixin1.jpg" alt=""></a></span>--%>
-            <%--<span><a href="##"><img src="/statics/img/qq1.jpg" alt=""></a></span>--%>
-            <%--</div>--%>
-
-            <%--&lt;%&ndash;<button type="button" class="btn btn-primary"&ndash;%&gt;--%>
-            <%--&lt;%&ndash;data-dismiss="modal" id="be_sure" disabled="disabled">注 册</button>&ndash;%&gt;--%>
-            <%--&lt;%&ndash;<button type="button" class="btn " data-dismiss="modal">取 消</button>&ndash;%&gt;--%>
-            <%--</div>--%>
+            <div ><br/><br/></div>
         </div>
     </div>
 </div>
 
 <%--登录弹出框--%>
-<div class="modal" id="loginWin" tabindex="-1" role="dialog" aria-labelledby="new_email">
+<div class="modal" id="loginWin" tabindex="-1" role="dialog" aria-labelledby="new_email" style="background:rgba(195,195,195,0.8);">
     <div class="modal-dialog" role="document">
-        <div class="modal-content">
+        <div class="modal-content col-md-7 col-md-offset-3">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
                         aria-hidden="true">&times;</span>
@@ -176,24 +163,33 @@
                 <h4 class="modal-title" id="login0">用户登录</h4>
             </div>
             <div class="modal-body">
-                <form>
+                <form  class="col-md-offset-1"  id="lform">
                     <div class="form-group">
-                        <label for="userName0">userName</label>
+                        <label for="userName0">用户名</label>
                         <input type="text" class="form-control" id="userName0"
-                               placeholder="用户名/邮箱(必填)">
+                               placeholder="请输入用户名/邮箱">
                     </div>
 
                     <div class="form-group">
-                        <label for="password0">password</label>
-                        <input type="password" class="form-control" id="password0" placeholder="密码">
+                        <label for="password0">密&nbsp;&nbsp;&nbsp;码</label>
+                        <input type="password" class="form-control" id="password0" placeholder="请输入密码">
+                        <br/>
+                    </div>
+
+                    <div>
+                        <button type="button" class="btn btn-warning form-group col-md-12"
+                                data-dismiss="modal" id="be_sure" disabled="disabled">登录
+                        </button>
                     </div>
                 </form>
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-primary"
-                        data-dismiss="modal" id="be_sure0" disabled="disabled">确定
-                </button>
-                <button type="button" class="btn btn-danger" data-dismiss="modal">取消</button>
+            <div >
+                <br/>
+                <br/>
+                <%--<button type="button" class="btn btn-primary"--%>
+                        <%--data-dismiss="modal" id="be_sure0" disabled="disabled">确定--%>
+                <%--</button>--%>
+                <%--<button type="button" class="btn btn-danger" data-dismiss="modal">取消</button>--%>
             </div>
         </div>
     </div>
