@@ -47,10 +47,10 @@
     <div class="input-group col-md-3 col-sm-5 col-xs-5" id="search" style="margin-left:30px;padding-top:8px">
         <input type="text" class="form-control">
         <span class="input-group-btn">
-		            <button class="btn btn-info btn-search">查找</button>
+		            <button class="btn btn-info btn-search"><span class="glyphicon glyphicon-search" ></span></button>
 		        </span>
     </div>
-    <div class="login visible-lg pull-right">
+    <div class="login visible-lg visible-md visible-sm pull-right">
         <button class="btn btn-warning" type="button" style="margin-right:20px"><a data-toggle="modal"
                                                                                    data-target="#registerWin">注册</a>
         </button>
@@ -85,15 +85,15 @@
                 <a href="http://www.lanrentuku.com" target="_blank">bootstrap</a>
                 <a href="http://www.lanrentuku.com" target="_blank">jquery</a>
                 <a href="http://www.lanrentuku.com" target="_blank">vue.js</a>
-                <a href="http://www.lanrentuku.com" target="_blank">react</a>
-                <a href="http://www.lanrentuku.com" target="_blank">spring boot</a>
-                <a href="http://www.lanrentuku.com" target="_blank">spring mvc</a>
-                <a href="http://www.lanrentuku.com" target="_blank">scrapy</a>
-                <a href="http://www.lanrentuku.com" target="_blank">scapy</a>
-                <a href="http://www.lanrentuku.com" target="_blank">requests</a>
-                <a href="http://www.lanrentuku.com" target="_blank">mysql</a>
-                <a href="http://www.lanrentuku.com" target="_blank">linux</a>
-                <a href="http://www.lanrentuku.com" target="_blank">gggggg</a>
+                <%--<a href="http://www.lanrentuku.com" target="_blank">react</a>--%>
+                <%--<a href="http://www.lanrentuku.com" target="_blank">spring boot</a>--%>
+                <%--<a href="http://www.lanrentuku.com" target="_blank">spring mvc</a>--%>
+                <%--<a href="http://www.lanrentuku.com" target="_blank">scrapy</a>--%>
+                <%--<a href="http://www.lanrentuku.com" target="_blank">scapy</a>--%>
+                <%--<a href="http://www.lanrentuku.com" target="_blank">requests</a>--%>
+                <%--<a href="http://www.lanrentuku.com" target="_blank">mysql</a>--%>
+                <%--<a href="http://www.lanrentuku.com" target="_blank">linux</a>--%>
+                <%--<a href="http://www.lanrentuku.com" target="_blank">gggggg</a>--%>
             </div>
         </div>
     </div>
@@ -111,7 +111,7 @@
                 <h4 class="modal-title" id="register">注册用户</h4>
             </div>
             <div class="modal-body " id="pop1">
-                <form class="col-md-offset-2" id="iform">
+                <form class=" col-md-offset-2 col-sm-offset-2 col-xs-offset-2" id="iform">
                     <div class="form-group ">
                         <label for="userName">用 户 名&nbsp：</label>
                         <input type="text" class="form-control" id="userName"
@@ -141,7 +141,7 @@
                     </div>
                     <div class="clear"></div>
                     <div>
-                        <button type="button" class="btn btn-warning form-group col-md-9 "
+                        <button type="button" class="btn btn-warning form-group col-md-9 col-sm-9 col-xs-9"
                                 data-dismiss="modal" id="be_sure" disabled="disabled">立 即 注 册
                         </button>
                     </div>
@@ -155,7 +155,7 @@
 <%--登录弹出框--%>
 <div class="modal" id="loginWin" tabindex="-1" role="dialog" aria-labelledby="new_email" style="background:rgba(195,195,195,0.8);">
     <div class="modal-dialog" role="document">
-        <div class="modal-content col-md-7 col-md-offset-3">
+        <div class="modal-content  col-md-7 col-sm-7 col-xs-7 col-md-offset-3 col-sm-offset-3 col-xs-offset-3">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
                         aria-hidden="true">&times;</span>
@@ -163,7 +163,7 @@
                 <h4 class="modal-title" id="login0">用户登录</h4>
             </div>
             <div class="modal-body">
-                <form  class="col-md-offset-1"  id="lform">
+                <form  class="col-md-offset-1 col-sm-offset-1 col-xs-offset-1"  id="lform">
                     <div class="form-group">
                         <label for="userName0">用户名</label>
                         <input type="text" class="form-control" id="userName0"
