@@ -50,9 +50,9 @@ public class SecurityTools {
         jso.put("userEmail", userEmail);
         return jso.toString();
     }
-
-    public static Cookie cookieFactory(String userName) {
-        Cookie cookie = new Cookie(SYS, userName);
+    //以useraId 构建cookie
+    public static Cookie cookieFactory(String userId) {
+        Cookie cookie = new Cookie(SYS, userId);
         cookie.setMaxAge(60 * 60 * 24);
         return cookie;
     }

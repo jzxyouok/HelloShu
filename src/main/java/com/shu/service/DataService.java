@@ -6,6 +6,9 @@ import com.shu.tools.Status;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.servlet.http.Cookie;
+
+import static com.shu.tools.SecurityTools.cookieFactory;
 import static com.shu.tools.SecurityTools.md5;
 import static com.shu.tools.Status.*;
 
@@ -16,7 +19,8 @@ import static com.shu.tools.Status.*;
 public class DataService {
     @Autowired
     private UserDao userDao;
-
+    //添加用户
+    //注册功能
     public Status addUser(String uId, String pwd, String email) {
         if (uId.length() <= 0 || pwd.length() <= 0 || email.length() <= 0) return FAILD;
         if (userDao.userExist(uId)) return FAILD;
@@ -29,6 +33,16 @@ public class DataService {
         else return FAILD;
 
     }
+
+    //登录——账号密码型
+    public  Status userLogin(String userId,String pwd){
+        if(checkUser(userId,pwd).equals(SUCCESS)){
+            return SUCCESS;
+        }
+        return FAILD;
+    }
+
+
 
     public Status checkUser(String uId, String password) {
         password = md5(password);
@@ -48,5 +62,4 @@ public class DataService {
         if (userDao.checkEmail(email)) return EXISTS;
         return NO_EXISTS;
     }
-
 }

@@ -23,11 +23,11 @@ public class LoginController {
     @Autowired
     private DataService dataService;
 
+    //邮箱登录未写
     @RequestMapping(value = "", method = RequestMethod.POST, produces = "text/html;charset=utf-8")
     @ResponseBody
     public String login(String uId, String password, HttpServletResponse response) {
         Status status = dataService.checkUser(uId, password);
         return doResponse(uId, status, response);
     }
-
 }
