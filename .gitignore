@@ -12,6 +12,8 @@ target
 src/main/resources/jdbc.properties
 src/test
 1.0.iml
+src/main/resources/rebel.xml
+
 
 
 
@@ -80,3 +82,4 @@ fabric.properties
 .idea/sonarlint
 
 # End of https://www.gitignore.io/api/intellij
+将删除 .idea/inspectionProfiles/
