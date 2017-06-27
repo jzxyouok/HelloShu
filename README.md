@@ -1,7 +1,44 @@
 # HelloShu
 
+### 小组成员
+* 袁子华　[(组长)](https://github.com/yahaa)
+* 李乾梅　[(组员)](https://github.com/Aly0)
+* 李长虹　[(组员)](https://github.com/ggeh)
+
+### 环境
+* 开发工具　Intellij Idea
+* 版本控制　git+github
+* 数据库　Mysql
+* 框架　spring+springmvc+hibernate
+
+
 ### 项目来源
 * 模拟 stackoverflow 做一个校园问答系统，把校园内常问的问题集中起来，方便他人特别是新生．
+
+#### 分工
+* 袁子华
+
+        1. 系统功能分析
+        2. 系统框架搭建
+        3. 小组任务分工
+        4. 数据接口设计 (controller层)
+        5. 业务逻辑层设计 (service层)
+
+
+* 李乾梅
+
+        1. 前端界面设计 (webapp层)
+        2. 前端与后端数据交互 (DataController 层下的数据接口)
+        3. 分析发现系统还可以开发的功能
+        
+* 李长虹
+
+        1. 数据设计 (Entity层)
+        2. 数据访问接口层设计 (dao层)
+        3. 系统通用工具层设计　(tools层)
+        
+        
+
 
 ### 项目用例图
 * 图1

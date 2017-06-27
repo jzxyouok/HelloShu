@@ -9,5 +9,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 @RequestMapping("addQuestion")
 public class AddQuestionController {
+    @RequestMapping(value = "")
+    public String question(){
+        return "question";
+    }
 
 }
