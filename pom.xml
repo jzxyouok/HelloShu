@@ -179,6 +179,9 @@
         </dependency>
 
     </dependencies>
+    <properties>
+        <java.varsion>1.8</java.varsion>
+    </properties>
 
 
     <build>
